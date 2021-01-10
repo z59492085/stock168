@@ -11,7 +11,7 @@ Authdb = 'jjstock168'
 
 ##### 資料庫連接 #####
 def constructor():
-    client = MongoClient("mongodb://z5949285:<z21316574>@cluster0-shard-00-00.1mbrl.mongodb.net:27017,cluster0-shard-00-01.1mbrl.mongodb.net:27017,cluster0-shard-00-02.1mbrl.mongodb.net:27017/<jjstock168>?ssl=true&replicaSet=atlas-76qlxr-shard-0&authSource=admin&retryWrites=true&w=majority")
+    client = MongoClient("mongodb://z59492085:<z21316574>@cluster0-shard-00-00.1mbrl.mongodb.net:27017,cluster0-shard-00-01.1mbrl.mongodb.net:27017,cluster0-shard-00-02.1mbrl.mongodb.net:27017/<jjstock168>?ssl=true&replicaSet=atlas-76qlxr-shard-0&authSource=admin&retryWrites=true&w=majority")
     db = client[Authdb]
     return db
    
