@@ -11,9 +11,9 @@ from datetime import datetime
 ###############################################################################
 
 ##### 發出請求 #####
-client = MongoClient("mongodb://z5949285:<z21316574>@cluster0-shard-00-00.1mbrl.mongodb.net:27017,cluster0-shard-00-01.1mbrl.mongodb.net:27017,cluster0-shard-00-02.1mbrl.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-76qlxr-shard-0&authSource=admin&retryWrites=true&w=majority")
+client = MongoClient("mongodb://z5949285:<z21316574>@cluster0-shard-00-00.1mbrl.mongodb.net:27017,cluster0-shard-00-01.1mbrl.mongodb.net:27017,cluster0-shard-00-02.1mbrl.mongodb.net:27017/<jjstock168>?ssl=true&replicaSet=atlas-76qlxr-shard-0&authSource=admin&retryWrites=true&w=majority")
 ##### 切換資料庫 #####
-dbname = 'z59492085'
+dbname = 'jjstock168'
 db = client[dbname]
 
 ##### 輸入想搜尋的collection #####
