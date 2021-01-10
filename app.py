@@ -1,17 +1,13 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 18 01:00:17 2018
-
-@author: linzino
-"""
-
-
+#載入LineBot所需要的套件
 from flask import Flask, request, abort
-from linebot import (LineBotApi, WebhookHandler)
-from linebot.exceptions import (InvalidSignatureError)
+
+from linebot import (
+    LineBotApi, WebhookHandler
+)
+from linebot.exceptions import (
+    InvalidSignatureError
+)
 from linebot.models import *
-import mongodb
-import re
 
 app = Flask(__name__)
 
@@ -37,6 +33,7 @@ def callback():
         handler.handle(body, signature)
     except InvalidSignatureError:
         abort(400)
+
     return 'OK'
 
 #訊息傳遞區塊
